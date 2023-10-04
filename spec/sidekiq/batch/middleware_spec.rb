@@ -79,7 +79,7 @@ describe Sidekiq::Batch::Middleware do
 end
 
 describe Sidekiq::Batch::Middleware do
-  let(:config) { double(Sidekiq::Config) }
+  let(:config) { double(Sidekiq) }
   let(:client_middleware) { double(Sidekiq::Middleware::Chain) }
 
   context 'client' do
